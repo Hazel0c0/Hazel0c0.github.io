@@ -1,0 +1,92 @@
+@import url('common.css');
+.title {
+  /* font */
+  font-size: 3em;
+  font-weight: 700;
+  color: white;
+  text-shadow: 1px 1px 10px #000;
+  text-align: center;
+
+  /* box */
+  width: 50%;
+  
+  /* position */
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.title #userIdShow{
+  color: aqua;
+}
+
+/* 오디오 */
+audio {
+  display: none;
+}
+
+
+/* 버튼 공통사항 */
+.btn {
+  font-weight: 700;
+  color: white;
+  text-shadow: 1px 1px 5px #000;
+  
+  padding: 20px 40px;
+  background-color: rgba(35, 35, 35, 0.514);
+  
+  border: 5px dashed wheat;
+  border-radius: 100px;
+  
+}
+.btn_text:hover {
+  cursor: pointer;
+}
+
+/*  이미지 추가 버튼*/
+.m_button {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+
+  position: absolute;
+
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+.levels {
+  width: 100%;
+  /* 여백 */
+  margin-top: 50px;
+
+  /* position */
+  position: absolute;
+  top: 30%;
+  text-align: center;
+}
+
+.levels>* {
+  /* font */
+  font-size: 2em;
+  
+  
+  /* box */
+  width: 30%;
+
+  /* position */
+  display: block;
+  margin: 20px auto;
+}
+
+.level {
+  width: 100%;
+  font-size: 0.8em;
+
+  font-family: 'Ycomputer-Regular';
+}
