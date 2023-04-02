@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>bo-gle-bo-gle</title>
 
   <!-- audio -->
   <audio autoplay loop>
@@ -14,6 +14,7 @@
 
   <!-- css -->
   <link rel="stylesheet" href="../CSS/gameplay.css">
+  <link rel="stylesheet" href="../CSS/selectLevel.css">
 
   <!-- js -->
   <script src="../js/gameplay.js" type="module" defer></script>
@@ -21,6 +22,31 @@
 </head>
 
 <body>
+
+  <div class="selectLevel">
+    <h1 class="title btn"><span id="userIdShow"></span><span>님의 난이도 선택</span></h1>
+
+    <ul class="levels">
+
+      <input type="text" id="userId" name="userId" value="" style="display: none;">
+
+      <li><button class="level btn">상</button></li>
+      <li><button class="level btn">중</button></li>
+      <li><button class="level btn">하</button></li>
+
+    </ul>
+
+    <div class="m_button">
+      <label for="chooseFile">
+        <span class="btn_text">
+          몬스터를 고르고 싶다면?<br><br>
+          👉 CLICK HERE! 👈
+        </span>
+      </label>
+    </div>
+    <input type="file" class="filebox_reset" id="chooseFile" name="chooseFile" accept="image/*">
+   
+  </div>
 
   <div class="wrap">
     <div class="play-ground">
@@ -66,7 +92,9 @@
 
         <!-- 플레이어 -->
         <div id="bobby"></div>
-
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
